@@ -6,7 +6,7 @@ services:
     container_name: megaproxy
     volumes:
       - ./megaproxy.conf:/etc/nginx/nginx.conf      
-      - ./certificates:/etc/nginx/certificates
+      - ../certificates:/etc/nginx/certificates
     ports:
       - "80:80"
       - "443:443"
